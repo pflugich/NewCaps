@@ -1,10 +1,10 @@
 // JavaScript Document
 
-var map = L.map('map', {
-            center : [47.264269, 11.385312],
-            zoom : 16
-        });
-
-        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap contributors</a>'
-        }).addTo(map);
+     var map = L.map('map').setView([-41.2858, 174.78682], 14);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);

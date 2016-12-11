@@ -1,4 +1,6 @@
 // JavaScript Document
+//Set fixed map frame
+//zoom to middle of Germany
 
      var map = L.map('map').setView([-41.2858, 174.78682], 14);
         mapLink = 
